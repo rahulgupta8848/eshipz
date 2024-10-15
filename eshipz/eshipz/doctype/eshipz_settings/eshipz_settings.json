@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-25 00:47:11.005337",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "api_token",
+  "column_break_sskf",
+  "enable_allocation"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "Enable to Configure API Token",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "depends_on": "enabled",
+   "fieldname": "api_token",
+   "fieldtype": "Data",
+   "label": "API Token",
+   "mandatory_depends_on": "enabled"
+  },
+  {
+   "fieldname": "column_break_sskf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "enabled",
+   "description": "Enable Allocation for eShipz Rule based shipment",
+   "fieldname": "enable_allocation",
+   "fieldtype": "Check",
+   "label": "Enable Allocation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-26 11:38:07.216638",
+ "modified_by": "Administrator",
+ "module": "eShipz",
+ "name": "eShipz Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
